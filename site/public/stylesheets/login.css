@@ -1,0 +1,75 @@
+.login main .formularios{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto;
+    z-index: 0;
+}
+
+.login small {
+    color : red;
+}
+
+.login main .formularios input {
+    width: 90%;
+    padding: 12px;
+    margin: 5px auto;
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px 20px;
+    box-shadow: 1px 3px rgba(85, 85, 85, 0.500);;
+    transform: translateY(2px);
+}
+
+.login main .formularios .enviar {
+    background-color: #50D1A3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+
+.login main .formularios .enviar:active{
+    box-shadow: 1px 3px rgba(85, 85, 85, 0.500);
+    transform: translateY(2px);
+}
+
+.login main .formularios .botones{
+    display: flex;
+    flex-direction: column;
+}
+
+.login main .formularios .checkLogin input{
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.login .icon{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.login .icon i{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+} 
+@media screen and (min-width: 600px) {
+    .login main .formularios input {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .login main .formularios input {
+        width: 50%;
+    }
+}

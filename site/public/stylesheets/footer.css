@@ -1,0 +1,67 @@
+footer .marcas {
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px;
+}
+footer .marcas img {
+    width: 100px;
+}
+
+footer .marcas h1{
+    text-align: center;
+    padding: 5px;
+}
+footer .imagenes{
+ text-align: center;
+    padding: 5px;
+}
+
+footer img {
+    
+    margin: 0 15px;
+    width: 10%;
+    
+}
+
+footer .footer-bottom {
+    display: flex;
+    background-color: black;
+    padding: 5px;;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer-bottom h4{
+    margin: 10px 15px;
+    color: #24c5ee
+}
+
+footer ul li{
+color: white;
+font-size: 16;
+padding: 5px;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: column;
+    color: #24c5ee
+} 
+
+footer div h4, footer div {
+    padding: 5px;
+}
+
+  footer .legal{
+      background-color: black;
+  }
+  footer .legal p {
+      color: white;
+      text-align: center;
+      padding: 3px;
+  }
+
+  
+
+
+
+ 

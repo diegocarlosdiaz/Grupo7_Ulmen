@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %>
+
+<body class="home">
+    <%- include('./partials/header') %>
+    <main>
+        <section class="lanzamiento">
+            <h1>¿PARA QUIEN COMPRAS?</h1>
+            <div>
+                <a href="/productFilter?genero=2"><img src="/images/mujer1.jpg" alt=""></a>
+                <a href="/productFilter?genero=1"><img src="/images/hombre.jpg" alt=""></a>
+                <a href="/productFilter?genero=3"><img src="/images/nino.jpg" alt=""></a>
+            </div>
+
+            <h2>Todos los productos</h2>
+            <div class="container">
+                <%productos.forEach(producto =>{%>
+                <div class="product">
+                    
+                    <a href="/productDetail/<%=producto.id%>"><img src="/images/productos/<%= producto.imagenes[0]?.nombre %>" alt="">
+                    <div>
+                        <p class="nombre"><%= producto.nombre %> </p>
+                        <span>$ <%= producto.precio %></span>
+                    </div>
+                    <i class="fas fa-cart-plus icon"></i>
+                </a>
+                </div>
+                <% }) %>
+        </section>
+    </main>
+
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

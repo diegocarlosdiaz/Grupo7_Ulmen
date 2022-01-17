@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.bar-btn {
+    font-size: 35px;
+    color: white;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    z-index: 10;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.icon i {
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+
+.menu li {
+    display: none;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.menu li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#check,
+#heart {
+    display: none;
+}
+
+#check:checked~.menu {
+    height: 100vh;
+}
+
+#check:checked~.menu li {
+    display: block;
+}
+
+.menu .enviar {
+    width: 100px;
+    background-color: var(--botonCeleste);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu .button-cerrar {
+    width: 50px;
+    background-color: var(--botonCeleste);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.menu .enviar:active{
+    box-shadow: 1px 3px rgba(85, 85, 85, 0.500);
+    transform: translateY(2px);
+}
+
+.menu .cerrar{
+    position: fixed;
+    width: 45px;
+    border-radius: 50px;
+    bottom: 450px;
+    right: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: center;
+        margin-right: 50px;
+        z-index: 10;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 150px;
+        order: 2;
+    }
+
+    .menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .login main .formularios .enviar {
+        background-color: #50D1A3;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        margin: 10px auto;
+    }
+
+
+    .login main .formularios .enviar:active {
+        box-shadow: 1px 3px rgba(85, 85, 85, 0.500);
+        transform: translateY(2px);
+    }
+
+    .login main .formularios .botones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        text-align: center;
+    }
+
+    .menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 10px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+}

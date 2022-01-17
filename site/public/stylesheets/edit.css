@@ -1,0 +1,46 @@
+.edit main .formularios{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.edit main .formularios div {
+    width: 60%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+.edit main .enviar {
+    background-color: #50D1A3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+
+.edit main .enviar:active{
+    box-shadow: 1px 3px rgba(85, 85, 85, 0.500);
+    transform: translateY(2px);
+}
+
+.edit main .botones{ 
+    padding: 5px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .edit main .formularios input {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .edit main .formularios input {
+        width: 50%;
+    }
+}

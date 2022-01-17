@@ -1,0 +1,164 @@
+
+.home main section{
+    width: 95%;
+    text-align: center;
+}
+
+.home .slider {
+   
+    width: 100%;
+    overflow: hidden;
+}
+
+.home .slider ul {
+    display: flex;
+    width: 300%;
+    animation: cambio 15s infinite alternate linear;
+    
+}
+.home .slider li{
+    width: 100%;
+    list-style: none;
+}
+.home .slider img {
+     width: 100%;
+     height: 100%;
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    33% { margin-left: 0;}
+
+    45% {margin-left: -100%;}
+    63% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+
+}
+
+.home .slider h2  {
+    display: inline-block;
+    position: relative;
+}
+/*lanzamiento*/
+
+
+
+.home .lanzamiento h1{
+    margin: 30px;
+}
+
+.home .lanzamiento {
+    margin: 0 auto;
+}
+
+.home .lanzamiento img{
+
+    width:70%;
+    margin: 5px;  
+}
+
+/*estilos de productos*/
+
+.home .vistos {
+    margin: 10px auto;
+
+}
+
+.home .vistos h2{
+    margin: 30px;
+}
+
+.home .container{
+    display: flex;
+    margin: 5px;
+
+}
+
+.home .product{
+    background-color: #fff;
+    border-radius: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem !important
+}
+
+/* .home .product {
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+} */
+
+.home .product img{
+width: 100%;
+height: 100px;
+object-fit: cover;
+
+}
+
+.home .product .nombre{
+    margin: 0 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272727;
+    position: relative;
+    top: 8px
+}
+
+
+
+.home .container h3 {
+    text-align: center;
+    margin: 10px;
+}
+.home .container span{
+    color:#11728a;
+    font-weight: bold;
+    
+}
+.home .product .icon {
+    display: block;
+    margin-top: 10px 0;
+}
+
+@media screen and (min-width:768px){
+
+    .home .lanzamiento img{
+    
+        width: 25%;
+        height: 125px;
+        margin: 5px 10px;
+        
+    }
+    .home .container{
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap:5px;
+    }
+}
+@media screen and (min-width:1000px){
+    .home .lanzamiento img{
+    
+        width: 28%;
+        height: 200px;
+        margin: 5px 20px;
+        
+    }
+    .home .container{
+    
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap:10px;
+    }
+
+    .home .product img{
+        padding: 10px;
+        width: 100%;
+        height: 250px;
+        }
+
+        .home .product .icon {
+            font-size: 24px;
+        }
+}

@@ -1,0 +1,46 @@
+<header>
+    <nav>
+
+        <div>
+            <a href="/"><img src="/images/logo.png" alt="logo" class="logo"></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="bar-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="menu">
+            <div class="icon position-relative">
+                <% if (locals.usuarioLogin) {%>
+                    <li class="cerrar">
+                        <form action="/cerrarSesion" method="get">
+                            <div class="botones">
+                                <button class="button-cerrar" type="submit"><i class="fas fa-sign-in-alt"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                <li><a href="/profile"><i class="fas fa-user-circle"></i></a></li>
+                <% if (locals.usuarioLogin.rol == 1) { %>
+                    <li><a href="/admin"><i class="fas fa-user-cog"></i></a></li>
+
+                <% } %>
+
+                <% } else {%>
+                <li><a href="/login"><i class="far fa-user"></i></a></li>
+                <li><a href="/register"><i class="fas fa-sign-in-alt"></i></a></li>
+                <% } %>
+                <li>
+                    <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+                    <span class=" badge rounded-pill bg-warning text-dark position-absolute bottom-50" id="span-cantidad-cart"></span>
+                </li>
+            </div>
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/productFilter?genero=1">Hombre</a></li>
+            <li><a href="/productFilter?genero=2">Mujer</a></li>
+            <li><a href="/productos">Tienda</a></li>
+        </ul>
+        
+    </nav>
+</header>

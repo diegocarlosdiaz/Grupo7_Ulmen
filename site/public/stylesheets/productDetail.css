@@ -1,0 +1,272 @@
+.detail #heart {
+    display: none;
+}
+
+.detail h1 {
+    font-size: 40px;
+}
+
+.detail h2{
+    font-size: 20PX;
+}
+
+.detail main section{
+    width: 90%;
+    margin: 0 auto;
+}
+.detail main section .title{
+    text-align: center;
+    padding: 6%;
+}
+
+.detail main article {
+    margin: 10px 0;
+}
+.detail main .imagenes {
+    display: block;
+}
+
+.detail main .titulo h3{
+    font-size: 22px;
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+.detail main .titulo p{
+padding: 10% 0  10% 0;
+font-size: 40px ;
+}
+
+.detail main .producto1 img{
+    width: 100%;
+}
+
+.detail main .producto2 {
+    text-align: center;
+}
+
+.detail main .producto2 img{
+    width: 19%;
+}
+
+.detail main .talle {
+    padding: 5px;
+    box-shadow: black;
+}
+
+.detail main .talle h4{
+    margin-left: 10px;
+}
+
+.detail main .talles {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.detail main .talles {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail main .talles .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.detail main .talles li{
+    border: rgba(0, 0, 0, .95) 1px solid; 
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin: 2px 10px;
+    box-shadow: 1px 2px rgba(85, 85, 85, 0.500);
+    transform: translateY(3px);
+}
+
+.detail main .detalle li a {
+    color:black;
+}
+
+.detail main .botones{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px;
+}
+
+.detail main .boton-carrito{
+        background-color: #35C0ED;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+}
+
+.detail main .boton-corazon {
+        border: none;
+        color: #2F90B0;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 24px;
+}
+
+.detail main .boton-carrito:active {
+  box-shadow: 1px 3px rgba(85, 85, 85, 0.500);;
+  transform: translateY(2px);
+}
+
+.detail main .boton-carrito:hover{
+    background-color: #2F90B0 ;
+}
+
+.detail main .boton-corazon:active {
+  text-shadow: 1px 3px rgba(85, 85, 85, 0.500);
+  transform: translateY(2px);
+}
+
+.detail .descripcion2  p {
+    padding: 1%;
+}
+
+.detail main .detalle2 {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.detail main .detalle2 div{
+    padding: 5px;
+}
+
+.detail main .detalle2 h4{
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+.detail main .recomendaciones {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.detail main .recomendaciones h2{
+    margin: 10px;
+}
+
+.detail main .reco{
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail main .reco img{
+    width: 30%;
+}
+
+@media screen and (min-width: 769px) {
+
+    .detail main .detalle {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    
+    .detail main .imagenes{
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .detail main .descripcion {
+        margin: 10px;
+        margin-right: 100px;
+    }
+
+    .detail main article{
+        margin: 5px 0;
+    }
+
+    .detail main .titulo h3{
+        font-size: 18px;
+    }
+
+    .detail main .talles li{
+        padding: 2px 6px;
+        margin: 3px 7px;
+    }
+
+    .detail main .boton-corazon {
+        padding: 5px 16px;
+        font-size: 18px;
+    }
+
+    .detail main .detalle2 div {
+        padding: 3px;
+    }
+
+    .detail main .detalle2 div h4 {
+        margin: 3px 0;
+        font-size: 12px;
+    }
+
+    .detail main .detalle2 div p{
+        font-size: 14px;
+    }
+
+    .detail main .detalle2 {
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    .detail main .reco img{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1279px){
+
+    .detail main article{
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .detail main .descripcion{
+        width: 30%;
+    }
+
+    .detail main .imagenes{
+        width: 40%;
+    }
+
+    .detail main .titulo h3{
+        padding: 10px;
+    }
+
+    .detail main .talles {
+        width: 60%;
+        padding: 20px 5px;
+    }
+
+    .detail main .talles li{
+        padding: 2px 6px;
+        margin: 5px 10px;
+    }
+
+    .detail main .boton-corazon {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+    
+    .detail main .reco img{
+        width: 20%;
+    }
+   
+
+}

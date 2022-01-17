@@ -1,0 +1,100 @@
+[
+  {
+    "id": 13,
+    "color": "Blanco",
+    "talle": null,
+    "genero": "Hombre",
+    "coleccion": "verano",
+    "estado": "en venta",
+    "precio": null,
+    "image": "productos/producto13/producto13-1.webp"
+  },
+  {
+    "id": 14,
+    "color": "Azul",
+    "talle": null,
+    "genero": "unisex",
+    "coleccion": "verano",
+    "estado": "agotado",
+    "precio": null,
+    "image": "productos/producto14/producto14-1.webp"
+  },
+  {
+    "id": 15,
+    "name": "producto15",
+    "color": "...",
+    "talle": "...",
+    "genero": "hombre",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam, eius voluptates fuga odio atque delectus illum quibusdam quasi in minima, repellat esse fugit corrupti quidem necessitatibus aliquam dolorem laboriosam.",
+    "coleccion": "...",
+    "estado": "vistos",
+    "precio": "$1300",
+    "image": "productos/producto15/producto15-1.jpg"
+  },
+  {
+    "id": 16,
+    "name": "producto16",
+    "color": "...",
+    "talle": "...",
+    "genero": "hombre",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam, eius voluptates fuga odio atque delectus illum quibusdam quasi in minima, repellat esse fugit corrupti quidem necessitatibus aliquam dolorem laboriosam.",
+    "coleccion": "...",
+    "estado": "...",
+    "precio": "$6050",
+    "image": "productos/producto16/producto16-1.webp"
+  },
+  {
+    "id": 17,
+    "name": "producto17",
+    "color": "...",
+    "talle": "...",
+    "genero": "unisex",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam, eius voluptates fuga odio atque delectus illum quibusdam quasi in minima, repellat esse fugit corrupti quidem necessitatibus aliquam dolorem laboriosam.",
+    "coleccion": "...",
+    "estado": "...",
+    "precio": "$1300",
+    "image": "productos/producto17/producto17-1.webp"
+  },
+  {
+    "id": 18,
+    "name": "producto18",
+    "color": "...",
+    "talle": "...",
+    "genero": "unisex",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam, eius voluptates fuga odio atque delectus illum quibusdam quasi in minima, repellat esse fugit corrupti quidem necessitatibus aliquam dolorem laboriosam.",
+    "coleccion": "...",
+    "estado": "...",
+    "precio": "$4800",
+    "image": "productos/producto18/producto18-1.webp"
+  },
+  {
+    "id": 19,
+    "name": "producto19",
+    "color": "...",
+    "talle": "...",
+    "genero": "niño",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam, eius voluptates fuga odio atque delectus illum quibusdam quasi in minima, repellat esse fugit corrupti quidem necessitatibus aliquam dolorem laboriosam.",
+    "coleccion": "...",
+    "estado": "vistos",
+    "precio": "$3600",
+    "image": "productos/producto19/producto19-1.webp"
+  },
+  {
+    "id": 20,
+    "talle": null,
+    "precio": null,
+    "image": "productos/producto20/producto20-1.jpg"
+  },
+  {
+    "name": "tintu",
+    "color": "Selecciona un color",
+    "talle": "",
+    "descripcion": "",
+    "genero": "Selecciona el genero",
+    "coleccion": "Selecciona la coleccion",
+    "estado": "Selecciona el estado del producto",
+    "precio": "",
+    "id": 9,
+    "image": "img-1635187452556.jpg"
+  }
+]

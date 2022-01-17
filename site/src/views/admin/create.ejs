@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<%-include('./partials/head')%>
+<!-- HEADER -->
+
+<body class="create">
+    <%-include('./partials/header')%>
+
+    <main>
+        <form class="formularios" id="formularios" action="/admin/create" method="POST" enctype="multipart/form-data">
+            <div class="form-floating">
+                <textarea name ="nombre"class="form-control" placeholder="Leave a comment here" id="nombre" ></textarea>
+                <label for="floatingTextarea">Nombre del producto</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="color" aria-label="Floating label select example" name="color">
+                    <option selected hidden value="">Selecciona un color</option>
+                    <% colores.forEach(color => { %>
+                        <option value="<%= color.id %>"><%= color.nombre %></option>
+
+                    <% }) %>
+
+                </select>
+                <label for="color">Color</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="talle" aria-label="Floating label select example" name="talle">
+
+                <option selected hidden value="">Selecciona un talle</option>
+                    <% talles.forEach(talle => { %>
+                        <option value="<%= talle.id %>"><%= talle.nombre %></option>
+
+                    <% }) %>
+                </select>
+
+                <label for="talle">Talle</label>
+            </div>
+
+            <div class="form-floating">
+                <textarea name="descripcion" class="form-control" placeholder="Leave a comment here" id="descripcion"></textarea>
+                <label for="descripcion">Descripcion</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="genero" aria-label="Floating label select example" name="genero" >
+
+                    <option selected hidden value="">Selecciona un genero</option>
+                        <% generos.forEach(genero => { %>
+                            <option value="<%= genero.id %>"><%= genero.nombre %></option>
+    
+                        <% }) %>
+                    </select>
+    
+                    <label for="genero">Género</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="coleccion" aria-label="Floating label select example" name="coleccion" >
+
+                    <option selected hidden value="">Selecciona una coleccion</option>
+                        <% colecciones.forEach(coleccion => { %>
+                            <option value="<%= coleccion.id %>"><%= coleccion.nombre %></option>
+    
+                        <% }) %>
+                    </select>
+    
+                    <label for="coleccion">Colección</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="categoria" aria-label="Floating label select example" name="categoria" >
+
+                    <option selected hidden value="">Selecciona una categoria</option>
+                        <% categorias.forEach(categoria => { %>
+                            <option value="<%= categoria.id %>"><%= categoria.nombre %></option>
+    
+                        <% }) %>
+                    </select>
+    
+                    <label for="categoria">Categoría</label>
+            </div>
+
+            <div class="input-group mb-3">
+                
+                <input name="precio"  id="precio" type="number" class="form-control" aria-label="Amount (to the nearest dollar)" value="<%= locals.old && old.precio %>" >
+                <span class="input-group-text">$</span>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label"></label>
+                <input name="image" class="form-control" type="file" id="image">
+              </div>
+        
+              <span class="error" id="nombreErrors"></span>
+              <span  class="error" id="colorErrors"></span>
+              <span class="error" id="talleErrors"></span>
+              <span class="error" id="descripcionErrors"></span>
+              <span class="error" id="generoErrors"></span>
+              <span class="error" id="coleccionErrors"></span>
+              <span class="error" id="categoriaErrors"></span>
+              <span class="error" id="precioErrors"></span>
+              <span class="error" id="imageErrors"></span>
+
+        <div class="botones">
+            <button class="enviar" type="submit">Agregar</button>
+        </div>
+        <div class="errores">
+            <span id="errores" ></span> 
+            <% if (locals.errors && errors.name) { %>
+            <small  class="error"><%= errors.name.msg %> </small>
+            <% } %>
+            </div>
+    </form>
+    </main>
+    <script src="/js/validationProducts.js"></script>
+    <%-include('./partials/footer')%>
+</body>
+
+</html>
+
+
+
+
+
+
+

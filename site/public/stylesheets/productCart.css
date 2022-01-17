@@ -1,0 +1,441 @@
+.cart{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+
+.cart .titulo article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+    
+}
+
+.cart .titulo h1{
+
+    padding: 5%;
+    padding-bottom: 2%;
+    color: black;
+    font-size: 35px;
+    padding-right: 8px;
+    
+    
+}
+
+
+.cart .titulo span{
+    
+    font-size: 12px;
+    
+}
+
+.cart .titulo p {
+    width: 130px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--botonCeleste);
+    margin: 5%;
+    margin-top: 6px;
+    box-shadow: 1px 3px rgb(165, 165, 165);
+    border-radius: 5px;
+}
+:root{
+    --botonCeleste: rgb(85, 153, 192);
+
+}
+
+.cart .descuento {
+    display: flex;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    /* border-radius: 10px; */
+    padding: 2%;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: nowrap;
+    
+}
+:root{
+    --botonVerde: rgb(42, 163, 103);
+}
+.cart .descuento input{
+    background-color:var(--botonVerde);
+    box-shadow: 1px 3px rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+.cart .descuento .boton input{
+    background-color: white;
+}
+.cart .principal{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.cart .principal .productos .productos1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    /* border-radius: 10px; */
+    align-items: center;
+    margin: 10px;
+}
+
+
+ 
+ .cart .principal .productos .productos1 .img{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    flex-wrap: wrap;
+    
+}
+.cart .principal .productos .productos1 .img h4{
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.cart .principal .productos .productos1  .form{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 3%;
+    
+    
+    
+
+}
+.cart .principal .productos .productos1 .form .descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 12px;
+    
+}
+.cart .principal .productos .productos1 .form .descripcion1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 12px;
+    
+}
+
+
+.cart .principal .productos .productos1 .form .descripcion .talle1{
+    width:100px;
+
+}
+
+
+
+.cart .principal .productos .productos1 .form .descripcion .cantidad1{
+    width:100px;
+}
+
+
+
+.cart .principal .productos .productos1 .form .descripcion .total1{
+width: 100px;
+}
+
+
+
+
+.cart .principal .productos .productos1 .form  input{
+    width: 100px;
+
+}
+
+.cart .principal .productos .productos1 .form select{
+    width:100px;
+}
+ 
+
+ 
+
+
+.cart .principal .productos .productos1 .edicion{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 270px;
+    align-items: flex-end;
+    width: 25%;
+
+}
+
+.cart .principal .productos .productos1 .edicion button{
+    background-color: var(--botonCeleste);
+    box-shadow: 1px 3px rgb(165, 165, 165);
+    border-radius: 5px;
+    margin: 10%;
+
+}
+
+
+
+
+.cart .principal .productos .productos1 .trash i{
+    
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 10%;
+    
+}
+
+.cart .principal .envioSubtotal .envio {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    /* border-radius: 10px; */
+    text-align: center;
+    height: 160px;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 5%;
+    
+
+}
+.cart .principal .envioSubtotal .envio div .descuento{
+    display:none
+}
+
+
+.cart .principal .envioSubtotal .envio article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:  0 auto;
+}
+.cart .principal .envioSubtotal .envio article div input{
+    text-align: center;
+    background-color: var(--botonVerde);
+    margin-top: 20px;
+    width: 100px;
+    box-shadow: 1px 3px rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+
+.cart .principal .envioSubtotal .totalCompra {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 5%;
+    margin:10px;
+    
+    
+}
+
+.cart .principal .envioSubtotal .totalCompra h4{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cart .principal .envioSubtotal .totalCompra form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px;
+    flex-wrap: nowrap;
+    
+}
+
+.cart .principal .envioSubtotal .totalCompra form input{
+    display: flex;
+    text-align: right;
+    padding: 5px;
+}
+
+.cart .principal .envioSubtotal .totalCompra button{
+    text-align: center;
+    background-color: var(--botonVerde);
+    margin-top: 20px;
+    width: 100px;
+    box-shadow: 1px 3px rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+.cart .principal .envioSubtotal .totalCompra .tablet{
+    display: flex;
+}
+.cart .principal .envioSubtotal .totalCompra .tablet div{
+    display:none;
+}
+
+
+.cart .mediosDePago{
+    text-align: center;
+    padding: 5%;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+}
+
+.cart .mediosDePago h2 {
+    padding: 10px;
+
+}
+
+.cart .mediosDePago h4{
+    padding: 5%;
+}
+
+.cart .mediosDePago img{
+    width: 100%;
+
+}
+
+.cart main .principal .tablet button{
+    display: none;
+}
+
+
+@media(max-width:768px){
+
+    .cart .principal .envioSubtotal {
+        display: none;
+    }
+    .cart .descuento {
+        display: none;
+    }
+
+    .cart .principal .productos .productos1 .form .descripcion .talle1{
+        width:55px;
+    
+    }
+    
+    
+    
+    .cart .principal .productos .productos1 .form .descripcion .cantidad1{
+        width:55px;
+    }
+    
+    
+    
+    .cart .principal .productos .productos1 .form .descripcion .total1{
+    width: 55px;
+    }
+    
+    
+    
+    
+    .cart .principal .productos .productos1 .form  input{
+        width: 55px;
+    
+    }
+    
+    .cart .principal .productos .productos1 .form select{
+        width: 55px;
+    }
+
+    .cart main .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart main .principal .tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    
+    .cart main .principal .tablet button {
+        display: block;
+        text-align:center ;
+        background-color: var(--botonVerde);
+        margin-top: 20px;
+        width: 100px;
+        box-shadow: 1px 3px rgb(165, 165, 165);
+        border-radius: 50%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+}
+
+   
+
+
+@media (min-width: 768px){
+
+    
+
+
+    .cart .principal .productos .productos1 .form .descripcion .talle1{
+        width:80px;
+    
+    }
+    
+    
+    
+    .cart .principal .productos .productos1 .form .descripcion .cantidad1{
+        width:80px;
+    }
+    
+    
+    
+    .cart .principal .productos .productos1 .form .descripcion .total1{
+    width: 80px;
+    }
+    
+    
+    
+    
+    .cart .principal .productos .productos1 .form  input{
+        width: 80px;
+    
+    }
+    
+    .cart .principal .productos .productos1 .form select{
+        width:80px;
+    }
+
+    .cart .principal .envioSubtotal .envio{
+        display: none;
+    }
+
+    .cart .principal .envioSubtotal .totalCompra{
+        display: none;
+    }
+    
+    .cart main .descuento{
+        display: none
+    }
+
+    .cart main .principal .tablet button {
+        display: block;
+        text-align:center ;
+        background-color: var(--botonVerde);
+        margin-top: 20px;
+        width: 100px;
+        box-shadow: 1px 3px rgb(165, 165, 165);
+        border-radius: 50%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}

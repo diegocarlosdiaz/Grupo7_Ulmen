@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head') %>
+<body class="login">
+    <%- include('./partials/header') %>
+
+    <main>
+
+        <form class="formularios" action="" method="POST">
+            <label for="email"> </label>
+            
+            <input type="email" name="email" placeholder="Escribi tu email ...">  
+        
+             
+             <label for="password"> </label>
+            <input type="password" name="password" placeholder="Escribi tu contraseña ...">
+            
+
+            <div class='checkLogin'>
+                <input type="checkbox" name="recordarme" id="checkbox">
+                <label for="recordarme">Recordarme</label>
+            </div>
+            <% if (locals.errors && errors.email.msg) { %> 
+                <small> <%= errors.email.msg %>  </small>
+                <% } %> 
+            <div class="botones">
+                <button class="enviar" type="submit">Ingresar</button>
+                <small><a href="/register">¿No tienes cuenta registrate aqui?</a></small>
+                <small><a href="#">¿Olvidaste tu contraseña?</a></small>
+            </div>  
+      </form>
+
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>

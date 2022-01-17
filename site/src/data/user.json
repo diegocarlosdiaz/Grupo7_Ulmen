@@ -1,0 +1,24 @@
+[
+  {
+    "Nombre": "gonzalo",
+    "Apellido": "valdes",
+    "DNI": "12345678",
+    "Fecha-de-nacimiento": "2021-11-25",
+    "Sexo": "hombre",
+    "email": "gonzaherenu@gmail.com",
+    "password": "$2a$10$wEgDVC7Q9p4gZw8u9AoauuCUXUNZbFdvYpo68qsfxUU3xFFftVljO",
+    "id": 6,
+    "image": "img-1636853905316.jpg"
+  },
+  {
+    "Nombre": "antonio ",
+    "Apellido": "valdes",
+    "DNI": "12345678",
+    "Fecha-de-nacimiento": "2021-11-18",
+    "Sexo": "hombre",
+    "email": "antonio@gmail.com",
+    "password": "$2a$10$VIDujbVaKOpRjl1yYicukubvKM8jxBcWDrIs4/873H0rP6p7kfAp2",
+    "id": 2,
+    "image": "img-1636854497692.jfif"
+  }
+]

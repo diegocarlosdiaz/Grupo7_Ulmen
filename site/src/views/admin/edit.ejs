@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<%-include('./partials/head')%>
+<!-- HEADER -->
+
+<body class="edit">
+    <%-include('./partials/header')%>
+
+    <main>
+        <form class="formularios" action="/admin/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="title"><%= product.nombre%></textarea>
+                <label for="floatingTextarea">Nombre del producto:</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" id="color" aria-label="Floating label select example" name="color" id="color">
+                    <% colores.forEach(color => { %>
+                        <option <%= color.id === product.id_colores && 'selected' %> value="<%= color.id %>"><%= color.nombre%></option>
+
+                    <% }) %>
+                    
+                </select>
+                <label for="color">Color</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" aria-label="Floating label select example" name="talle" id="talle">
+                    <% talles.forEach(talle => { %>
+                        <option <%= talle.id === product.id_talles && 'selected' %> value="<%= talle.id %>"><%= talle.nombre%></option>
+
+                    <% }) %>
+                    
+                </select>
+                <label for="talle">Talle <%= product.talle%></label>
+
+                
+            </div>
+            
+
+            <div class="form-floating">
+                <select class="form-select"aria-label="Floating label select example" name="genero" id="genero">
+                    <% generos.forEach(genero => { %>
+                        <option <%= genero.id === product.id_sexo && 'selected' %> value="<%= genero.id %>"><%= genero.nombre%></option>
+
+                    <% }) %>
+                </select>
+                <label for="genero">Genero</label>
+            </div>
+
+            <div class="form-floating">
+                <select class="form-select" aria-label="Floating label select example" name="coleccion" id='coleccion'>
+                    <% colecciones.forEach(coleccion => { %>
+                        <option <%= coleccion.id === product.id_coleccion && 'selected' %> value="<%= coleccion.id %>"><%= coleccion.nombre%></option>
+
+                    <% }) %>
+                </select>
+                <label for="coleccion">Coleccion</label>
+            </div>
+
+            <div class="input-group mb-3">
+                
+                <input name="precio" type="text" value="<%= product.precio%>" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">$</span>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label"></label>
+                <input class="form-control" type="file" id="formFile" name="image">
+              </div>
+              <div class="botones">
+                <button type="submit" class="enviar">Editar</button>
+            </div>
+        </form>
+        
+
+    </main>
+
+    <%-include('./partials/footer')%>
+</body>
+
+</html>

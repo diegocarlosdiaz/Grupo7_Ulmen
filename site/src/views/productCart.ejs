@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+    <body class="cart">
+        <%- include('./partials/header') %>
+
+            <main>
+
+                <section class="titulo">
+                    <article>
+                        <h1>Mi Carrito</h1>
+                        <span id="cantidad-productos"></span><span> productos</span>
+                    </article>
+                    <a href="/productos"><p>Seguir comprando</p></a>
+                    
+                </section>
+
+                <section class="descuento">
+                    <h3>CODIGO DE DESCUENTO</h3>
+                    <span>Ingresa el codigo de tu cupon, credito o giftcard</span>
+
+                    <article class="boton">
+                        <label for="codigo"></label>
+                        <input type="text" name="codigo" id="codigo">
+                    </article>
+
+                    <input type="submit" value="Agregar codigo">
+
+
+                </section>
+
+                <section class="principal">
+                    <section class="productos" id="box-productos">
+
+
+               
+
+
+                    </section>
+
+                    <section class="envioSubtotal">
+
+
+                        <div class="envio">
+                            <h3>Costo de Envio</h3>
+                            <h5>Ingresa tu codigo postal, para poder calcular el costo de envio.</h5>
+                            <article>
+                                <label for="codigoPostal"></label>
+                                <input class="code" type="text" name="codigoPostal" id="codigoPostal">
+                                <div>
+                                    <input type="submit" value="Agregar Codigo">
+                                </div>
+
+                            </article>
+
+
+                        </div>
+                        <div class="totalCompra">
+                            <h4>Total Compra </h4>
+                            <form action="total" method="POST">
+                                <div>
+                                    <label for="subtotal">Subtotal</label>
+                                    <input type="text" name="subtotal" id="subtotal">
+                                </div>
+                                <div>
+                                    <label for="envio">Envio</label>
+                                    <input type="text" name="envio" id="envio">
+                                </div>
+                                <div>
+                                    <label for="descuento">Descuento</label>
+                                    <input type="text" name="descuento" id="descuento">
+                                </div>
+                                <div>
+                                    <label for="total">Total</label>
+                                    <input type="text" name="total" id="total">
+                                </div>
+                                <div>
+                                    <button type="submit">Comprar</button>
+
+                                </div>
+
+
+                            </form>
+
+
+                    </section>
+                    <section class="tablet">
+
+
+
+                        <!-- <button type="submit" value="comprar">Descuento</button>
+                        <button type="submit" value="comprar">Codigo Postal</button>
+                        <button type="submit" value="comprar">comprar</button> -->
+
+
+
+
+
+                    </section>
+                </section>
+
+                <section class="mediosDePago">
+
+                    <div>
+                        <h2>Medios de pago</h2>
+                        <h4>Podrás abonar con Todos los Medios de Pagos habilitados y las principales tarjetas de
+                            crédito y
+                            débito</h4>
+
+                    </div>
+                    <div class="imgPagos">
+                        <img src="/images/mediosdepago.png" alt="Medios de Pago">
+
+
+                    </div>
+                </section>
+
+
+            </main>
+
+            <%- include('./partials/footer') %>
+    </body>
+
+</html>
