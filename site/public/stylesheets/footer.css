@@ -1,7 +1,14 @@
+footer {
+    margin-top: 200px;
+}
+
 footer .marcas {
     width: 95%;
-    margin: 10px auto;
+    margin: 40px auto;
     padding: 5px;
+}
+footer .marcas h1{
+    margin-bottom: 40px;
 }
 footer .marcas img {
     width: 100px;
@@ -25,42 +32,67 @@ footer img {
 
 footer .footer-bottom {
     display: flex;
-    background-color: black;
-    padding: 5px;;
+    background-color: lightgray;
+    padding: 5px;
+    padding-top: 40px;
     justify-content: space-around;
     text-align: center;
+    color: white;
 }
 .footer-bottom h4{
     margin: 10px 15px;
-    color: #24c5ee
+    color: black;
 }
 
 footer ul li{
 color: white;
 font-size: 16;
-padding: 5px;
+padding: 10px;
+text-align: start;
+transition: all 0.5s
 }
+
+
+footer ul li :hover {
+    background-color: #24c5ee;
+    padding: 5px;
+    border-radius: 15%;
+    color: white;
+    
+}
+  
 
 footer .redes {
     display: flex;
     flex-direction: column;
-    color: #24c5ee
+    
+    
+    
+    
+    
+    
 } 
+footer .redes a {
+    
+    margin-bottom: 30px;
+}
 
 footer div h4, footer div {
     padding: 5px;
 }
 
   footer .legal{
-      background-color: black;
+      background-color:lightgray;
   }
   footer .legal p {
-      color: white;
+      color: black;
       text-align: center;
-      padding: 3px;
+      padding: 5%;
+      
   }
 
   
+
 
 
 

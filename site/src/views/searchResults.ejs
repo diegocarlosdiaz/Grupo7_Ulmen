@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+        <main>
+            <h3 class=""><%= title %> : <%= busqueda %>  </h3>
+
+                <section class="search" >
+                  <br>
+                  <div class="box-search">
+                    <% if (productos.length > 0) { %>
+                    <% productos.forEach(producto => { %>
+                        <div class="detalle">
+                
+                
+                            <article class="imagenes">
+                                <div class="producto1">
+                                    <a href="/productDetail/<%=producto.id%>"><img src="/images/productos/<%= producto.imagenes[0]?.nombre %>" alt=""></a>
+                                </div>
+                                
+                            </article>
+            
+                            <div class="descripcion">
+                                <article class="titulo">
+                                    
+            
+                                    <h2> <%= producto.nombre %></h2>
+            
+                                    <p> $ <%= producto.precio %></p>
+                                </article>
+            
+                                <article class="talle">
+            
+                                    <h4>Talle disponible:</h4>
+            
+                                    <div class="talles">
+                                        <div class="d-flex flex-column" >
+                                           
+                                        </div>
+                                      
+                                    </div>
+                                </article>
+            
+            
+                                <article class="botones">
+            
+                                    <button onclick="addItem(event, '<%=producto.id%>')" class="boton-carrito" type="button"> Agregar al carrito </button>
+            
+                                    <input type="checkbox" id="heart">
+                                    <label for="heart" class="boton-corazon"><i class="far fa-heart"></i></label>
+            
+                                </article>
+            
+                                <article class="detalle2">
+            
+                                    <div>
+                                        <p><i class="fas fa-truck"></i> ENVIOS GRATIS,a partir de $9999</p>
+                                    </div>
+            
+                                    <div>
+                                        <h4><a href="#">DEVOLUCIONES GRATIS</a></h4>
+                                        <p><i class="fas fa-exchange-alt"></i> ¿No es tu talle? Podés devolverlo en un plazo de 60
+                                            días
+                                        </p>
+                                    </div>
+            
+                                    <div>
+                                        <H4><a href="#">PAGA SEGURO</a></H4>
+                                        <p><i class="fas fa-check"></i> Aprovechá hasta 3 cuotas sin interés</p>
+                                    </div>
+            
+                                </article>
+                            </div>
+                        <hr>
+                        <% }) %>
+                        <% }else{ %>
+                            <h4>No hay resultados para tu búsqueda </h4>
+                        <% } %>
+                    </div>
+                    
+                 </section>
+            </main>
+            <%- include('./partials/footer') %>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            
+    </body>
+
+</html>

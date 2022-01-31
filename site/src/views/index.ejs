@@ -3,29 +3,63 @@
 
 <%- include('./partials/head') %>
 
-<body class="home">
+    <body class="home">
 
-    <%- include('./partials/header') %>
+        <%- include('./partials/header') %>
 
-    <main>
-        <div class="slider">
-            <ul>
-                <li><img src="/images/negra.jpg" alt=""></li>
-                <li><img src="/images/negra1.png" alt=""></li>
-                <li><img src="/images/negra2.png" alt=""></li>
-            </ul>
-        </div>
+            <main>
+                <div class="promotion">
+                    <h1><a href="#">
+                            <em>ENVIOS</em> A TODO EL PAIS Y <em>CUOTAS SIN INTERES</em> CON TODAS LAS TARJETAS
+                        </a>
+                    </h1>
+                </div>
+                <div class="animation">
+  
+                    <ul class="slider">
+                      <li id="slide1">
+                        
+                        <img src="/images/slider5.png">
+                      </li>
+                      <li id="slide2">
+                        <img src="/images/pic2.png"/>
+                      </li>
+                      <li id="slide3">
+                        <img src="/images/pic3.png"/>
+                      </li>
+                    </ul>
+                    
+                    <ul class="menu">
+                      <li>
+                        <a href="#slide1">1</a>
+                      </li>
+                      <li>
+                        <a href="#slide2">2</a>
+                      </li>
+                       <li>
+                        <a href="#slide3">3</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
 
-        <section class="lanzamiento">
-            <h1>¿PARA QUIEN COMPRAS?</h1>
-            <div>
-                <a href="/productFilter?genero=2"><img src="/images/mujer1.jpg" alt=""></a>
-                <a href="/productFilter?genero=1"><img src="/images/hombre.jpg" alt=""></a>
-                <a href="/productFilter?genero=3"><img src="/images/nino.jpg" alt=""></a>
-            </div>
-        </section>
+                <section class="lanzamiento">
+                    <h1> <a href="#"> ELEGI EL GENERO QUE ESTAS BUSCANDO</a></h1>
+                    <div class="img">
+                        <a href="/productFilter?genero=2"><img src="/images/male.png" alt="">
+                            <h3>HOMBRES</h3>
+                        </a>
+                        <a href="/productFilter?genero=1"><img src="/images/female.png" alt="">
+                            <h3>MUJERES</h3>
+                        </a>
+                        <a href="/productFilter?genero=3"><img src="/images/kid.png" alt="">
+                            <h3>NIÑOS</h3>
+                        </a>
 
-        <!-- <section class="vistos">
+                    </div>
+                </section>
+
+                <!-- <section class="vistos">
             <h2>LOS MAS VISTOS</h2>
             <div class="container">
                 <%productos.forEach(producto =>{%>
@@ -41,9 +75,9 @@
                 <% }) %>
             </div>
         </section> -->
-    </main>
+            </main>
 
-    <%- include('./partials/footer') %>
-</body>
+            <%- include('./partials/footer') %>
+    </body>
 
 </html>

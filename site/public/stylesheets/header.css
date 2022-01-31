@@ -4,19 +4,29 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
+    
 }
 
 header {
     width: 100%;
     background-color: black;
+    
 }
 
-nav {
+nav{
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+
+}
+
+
+.nav-search{
+    display: none
 }
 
 .logo {
@@ -29,6 +39,9 @@ nav {
     color: white;
     margin-right: 50px;
     cursor: pointer;
+}
+.busqueda{
+    display: none;
 }
 
 
@@ -60,10 +73,16 @@ nav {
     margin: 20px 0;
 }
 
-.menu li a {
+.menu li strong{
     color: white;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.menu .menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #check,
@@ -168,7 +187,8 @@ nav {
         cursor: pointer;
         margin: 10px auto;
     }
-
+    
+    
 
     .login main .formularios .enviar:active {
         box-shadow: 1px 3px rgba(85, 85, 85, 0.500);
@@ -179,20 +199,28 @@ nav {
         display: flex;
         flex-direction: column;
     }
+    .menu  li {
+        transition: all 0.5s
+    
+    }
+    .menu  li :hover {
+    background-color: #24c5ee;
+    padding: 5px;
+    border-radius: 15%;
+    color: white;
+        
+    }
+
+
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .logo {
         margin-left: 50px;
     }
 
-    nav {
-        height: 100px;
-    }
 
-    .bar-btn {
-        display: none;
-    }
+
 
     .menu {
         position: relative;
@@ -210,5 +238,39 @@ nav {
     .menu li a {
         font-size: 12px;
     }
+    .nav-search{
+  
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  padding-left: 30px;
+
+}
+.nav-search .search input {
+    width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid beige;
+  padding-left: 5px;
+  position: relative;
+}
+
+.nav-search .search button {
+  position: absolute; 
+  margin-left: 3px;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
+
+}
+
+
 
 }
